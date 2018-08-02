@@ -5,18 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--
-        1. HTML
-        2. CSS
-        3. div.background 1200x800
-        4. div.hero 50x50
-        5. move left / right (bonus: move up/down)  (bonus: move hero with mouse)
-        6. fire 17x47
-        7. game loop
-        8. div.enemy
-        9. enemy objects / enemy movement
-        10. collision detection
-    -->
+    
     <div id="background">
         <div id="hero"></div>
         <div id="missiles"></div>
@@ -89,7 +78,7 @@
 
         function moveMissiles() {
             for(var i = 0 ; i < missiles.length ; i++ ) {
-                missiles[i].top = missiles[i].top - 8
+                missiles[i].top = missiles[i].top - 60
             }
         }
 
