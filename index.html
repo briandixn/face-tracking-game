@@ -49,26 +49,29 @@
             { left: 800, top: 175 },
             { left: 900, top: 175 }
         ];
-        
+
 
         document.onkeydown = function(e) {
             if (e.keyCode === 37) {
                 // Left
+                console.log("moved left")
                 hero.left = hero.left - 10;
             }
             if (e.keyCode === 39) {
                 // Right
+                console.log("moved right")
                 hero.left = hero.left + 10;
             }
             if (e.keyCode === 32) {
                 // Spacebar (fire)
                 missiles.push({
                     left: hero.left + 20,
-                    top: hero.top - 20 
+                    top: hero.top - 20
                 });
                 drawMissiles()
             }
             drawHero();
+            console.log(hero.left);
         }
 
 
@@ -106,7 +109,7 @@
         function collisionDetection() {
             for (var enemy = 0; enemy < enemies.length; enemy++) {
                 for (var missile = 0; missile < missiles.length; missile++) {
-                    if ( 
+                    if (
                         missiles[missile].left >= enemies[enemy].left  &&
                         missiles[missile].left <= (enemies[enemy].left + 50)  &&
                         missiles[missile].top <= (enemies[enemy].top + 50)  &&
@@ -127,7 +130,7 @@
             drawEnemies();
             collisionDetection();
         }
-        
+
         gameLoop()
 
     </script>

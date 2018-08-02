@@ -1,7 +1,7 @@
 div#background {
     width: 1200px;
     height: 800px;
-    background-image: url('assets/background.png');
+    background-image: url('assets/spaceback.jpg');
     position: absolute;
 }
 
@@ -11,7 +11,7 @@ div#hero {
     background-image: url('assets/hero.png');
     position: absolute;
     left: 575px;
-    top: 700px; 
+    top: 700px;
 }
 
 div#missiles {
@@ -27,7 +27,7 @@ div.missile1 {
     position: absolute;
 }
 
-div#enemies {
+div #enemies {
     width: 1200px;
     height: 800px;
     position: absolute;
